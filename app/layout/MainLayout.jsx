@@ -1,17 +1,17 @@
 'use client';
-import TopBar from "../components/Navbar/TopBar";
-import MainNavbar from "../components/Navbar/MainNavbar";
+import MainNavbarComponent from "@/components/Navbar/MainNavbarComponent";
+import TopBarComponent from "@/components/Navbar/TopBarComponent";
 import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollComponent from "@/components/Scroll/ScrollComponent";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <ScrollToTop />
       <div className="hidden md:block">
-        <TopBar />
+        <TopBarComponent />
       </div>
-      <MainNavbar />
+      <MainNavbarComponent />
       <main style={{ flex: 1 }}>
         {children}
       </main>
@@ -21,13 +21,13 @@ const MainLayout = ({ children }) => {
         textColor="#ffffff"
         showCopyright={true}
         links={[
-          { label: "Home",            href: "/" },
-          { label: "Store",           href: "/store" },
-          { label: "About",           href: "/About" },
-          { label: "Connect",         href: "/Connect" },
-          { label: "Terms",           href: "/terms" },
-          { label: "Privacy Policy",  href: "/privacy-policy" },
-          { label: "Refund Policy",   href: "/refund-policy" },
+          { label: "Home", href: "/" },
+          { label: "Store", href: "/store" },
+          { label: "About", href: "/About" },
+          { label: "Connect", href: "/Connect" },
+          { label: "Terms", href: "/terms" },
+          { label: "Privacy Policy", href: "/privacy-policy" },
+          { label: "Refund Policy", href: "/refund-policy" },
           { label: "Shipping Policy", href: "/shipping-policy" },
         ]}
       />

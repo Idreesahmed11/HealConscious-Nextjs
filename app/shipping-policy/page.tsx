@@ -1,6 +1,13 @@
-import ShippingPolicyPage from '@/app/pages/ShippingPolicy';
 
+import ShippingComponent from '@/components/shipping-policy/ShippingComponent'
+import React from 'react'
 
-export default function Page() {
-  return <ShippingPolicyPage />;
+const ShippingPage = () =>{
+
+  return(
+    <>
+    <ShippingComponent />
+    </>
+  )
 }
+export default ShippingPage

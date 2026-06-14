@@ -1,5 +1,5 @@
-import CareoxExperiencePage from '@/app/pages/CareoxExperience';
+import CareoxExperienceComponent from '@/components/CareoxExperience/CareoxExperienceComponent';
 
 export default function Page() {
-  return <CareoxExperiencePage />;
+  return <CareoxExperienceComponent />;
 }

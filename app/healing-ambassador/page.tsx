@@ -1,5 +1,12 @@
-import HealingAmbassador from '@/app/pages/HealingAmbassador';
+import HealingAmbassadorComponent from '@/components/HealingAmbassador/HealingAmbassadorComponent';
+import React from 'react';
 
-export default function Page() {
-  return <HealingAmbassador />;
-}
+const HealingAmbassadorpage = () => {
+  return (
+    <>
+      <HealingAmbassadorComponent />
+    </>
+  );
+};
+
+export default HealingAmbassadorpage;

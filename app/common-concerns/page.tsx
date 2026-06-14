@@ -1,5 +1,5 @@
-import CommonConcerns from '@/app/pages/CommonConcerns';
+import CommonconcernsComponent from '@/components/common-concerns/CommonconcernsComponent';
 
 export default function Page() {
-  return <CommonConcerns />;
+  return <CommonconcernsComponent />;
 }

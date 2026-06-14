@@ -185,7 +185,7 @@ function Footer() {
 
 
 
-function MemberAvatar({ member, onClick }) {
+function MemberAvatar({ member, onClick }: { member: any; onClick: (member: any) => void }) {
   return (
     <div
       onClick={() => onClick(member)}
@@ -199,7 +199,7 @@ function MemberAvatar({ member, onClick }) {
 }
 
 
-function MemberModal({ member, onClose }) {
+function MemberModal({ member, onClose }: { member: any; onClose: () => void }) {
   const [activeTab, setActiveTab] = useState("Stream");
   if (!member) return null;
   const username = member.name.toLowerCase().replace(" ", "");
@@ -245,7 +245,7 @@ function MemberModal({ member, onClose }) {
 
 
 
-function Lightbox({ index, onClose, onNav }) {
+function Lightbox({ index, onClose, onNav }: { index: number | null; onClose: () => void; onNav: (dir: number) => void }) {
   if (index === null) return null;
   const photo = communityPhotos[index];
   return (
@@ -273,7 +273,7 @@ function Lightbox({ index, onClose, onNav }) {
 
 
 
-function ArticleBottomSection({ onBack }) {
+function ArticleBottomSection({ onBack }: { onBack: () => void }) {
   return (
     <div className="mt-10 border-t border-gray-200 pt-8">
 
@@ -292,7 +292,7 @@ function ArticleBottomSection({ onBack }) {
         <p className="text-xs text-gray-400 ml-9">Tell us something about yourself.</p>
       </div>
 
-      {/* Tags */}
+
       <div className="mb-8 text-xs text-gray-500">
         <span className="mr-1">Category:</span>
         <a href="#" className="text-blue-500 hover:underline mr-2">KnowledgeBase</a>
@@ -348,7 +348,7 @@ function ArticleBottomSection({ onBack }) {
 
 
 
-function ArticlePage({ onBack }) {
+function ArticlePage({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-[#eef0f5] flex flex-col">
       <div className="flex-1 py-10 px-4">
@@ -546,15 +546,11 @@ function ArticlePage({ onBack }) {
   );
 }
 
-function ArticlePage2({ onBack }) {
+function ArticlePage2({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-[#eef0f5] flex flex-col">
       <div className="flex-1 py-10 px-4">
         <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-6 sm:p-8">
- 
-         
-
-
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5 leading-tight py-1 px-3">
             How to Remain Clear, Calm and Objective When Under Pressure
           </h1>
@@ -592,7 +588,7 @@ function ArticlePage2({ onBack }) {
   );
 }
 
-function ArticlePage3({ onBack }) {
+function ArticlePage3({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-[#eef0f5] flex flex-col">
       <div className="flex-1 py-10 px-4">
@@ -647,7 +643,7 @@ function ArticlePage3({ onBack }) {
 
 
 export default function ConnectPage() {
-  const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [selectedMember, setSelectedMember] = useState(null);
   const [showArticle, setShowArticle] = useState(false);
   const [showArticle2, setShowArticle2] = useState(false);
@@ -659,7 +655,7 @@ export default function ConnectPage() {
 
   return (
     <div className="min-h-screen bg-[#eef0f5] flex flex-col">
-<div className="min-h-screen bg-[#eef0f5] flex flex-col">
+      <div className="min-h-screen bg-[#eef0f5] flex flex-col">
         <div className="w-full max-w-[1200px] flex flex-col lg:flex-row gap-6">
 
         
@@ -1038,11 +1034,10 @@ export default function ConnectPage() {
       <Lightbox
         index={lightboxIndex}
         onClose={() => setLightboxIndex(null)}
-        onNav={(dir) => setLightboxIndex(i => (i + dir + communityPhotos.length) % communityPhotos.length)}
+        onNav={(dir) => setLightboxIndex(i => ((i ?? 0) + dir + communityPhotos.length) % communityPhotos.length)}
       />
       <MemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />
 
     </div>
   );
 }
-

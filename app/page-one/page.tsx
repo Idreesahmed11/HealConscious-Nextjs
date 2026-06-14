@@ -1,5 +1,12 @@
-import CareoxProduct from '@/app/pages/PageOne';
+import PageoneComponent from '@/components/page-one/PageoneComponent'
+import React from 'react'
 
-export default function Page() {
-  return <CareoxProduct />;
+const PageonePage = () =>{
+
+  return(
+    <>
+      <PageoneComponent />
+    </>
+  );
 }
+export default PageonePage

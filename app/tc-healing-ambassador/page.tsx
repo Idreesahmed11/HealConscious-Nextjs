@@ -1,5 +1,13 @@
-import TcHealingAmbassador from '@/app/pages/TcHealingAmbassador';
+import TchealingComponent from "@/components/tc-healing-ambassador/TchealingComponent";
+import React from "react";
 
-export default function Page() {
-  return <TcHealingAmbassador />;
+const TchealingPage = () =>{
+
+  return (
+    
+    <>
+      <TchealingComponent />
+    </>
+  )
 }
+export default TchealingPage

@@ -341,7 +341,7 @@ function ArticlePage({ onBack }: { onBack: () => void }) {
               <p className="text-xs text-gray-400">1 year ago</p>
             </div>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5 leading-tight px-3">How To Use Journaling As A Self-Reflective Healing Tool</h1>
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-5 leading-tight px-3">How To Use Journaling As A Self-Reflective Healing Tool</h3>
           <p className="text-xs text-gray-400 mb-4 px-3">August 6, 2024 (updated May 11, 2025) Published by Abeer</p>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 px-3">Have you ever felt like your mind is a cluttered attic – filled with dusty boxes of forgotten thoughts, emotions, and memories? It&apos;s easy to let these boxes pile up over time, creating a sense of overwhelm and confusion. Through journaling, you can have a safe space to process these feelings, bring clarity to your thoughts, and begin a journey of healing and growth.</p>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 px-3">For most people, pouring your deepest, darkest thoughts and feelings onto paper can seem intimidating at first, but it&apos;s precisely in this vulnerability that the true power of journaling lies. Just like talking to someone about your feelings, journaling allows you to process your emotions, gain clarity, and find relief. The only difference is, your journal is always available, never interrupts, and certainly never judges.</p>
@@ -474,7 +474,7 @@ function ArticlePage3({ onBack }: { onBack: () => void }) {
               <p className="text-xs text-gray-400">1 year ago</p>
             </div>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5 leading-tight px-3">&quot;Toxic Positivity: The Hidden Struggle Behind a Chronic Smile&quot;</h1>
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5 leading-tight px-3">&quot;Toxic Positivity: The Hidden Struggle Behind a Chronic Smile&quot;</h3>
           <p className="text-xs text-gray-400 mb-4 px-3">August 6, 2024 Published by Lena</p>
           <p className="text-gray-700 font-medium text-sm sm:text-base mb-6 px-3">&quot;Toxic Positivity: The Hidden Struggle Behind a Chronic Smile&quot;</p>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 px-3">For as long as I can remember, I&apos;ve always tried to see the good in things and people, choosing to describe the glass as half full and finding lessons even in challenging situations. Yet, despite my optimistic outlook, I still struggle with chronic illness, and sometimes it&apos;s incredibly tough.</p>
@@ -641,7 +641,7 @@ export default function Page() {
           <PostCard avatarSrc={logoImg} name="Heal Conscious" badge={<YellowBadge />} action="wrote a new post" time="1 year ago">
             <div className="mx-4 mb-4 border border-gray-200 rounded-xl overflow-hidden">
               <div className="p-4">
-                <h2 className="text-base sm:text-lg font-bold text-gray-900 mb-2 leading-snug">Welcome to Connect</h2>
+                <h4 className="text-base sm:text-lg font-bold text-gray-800 mb-2 leading-snug">Welcome to Connect</h4>
                 <p className="text-sm text-gray-600 leading-relaxed">Connect is your doorway into a collective healing experience. Plug in now!</p>
               </div>
               <div className="border-t border-gray-100 px-4 py-3 flex items-center justify-between">

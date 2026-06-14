@@ -1,5 +1,12 @@
-import ConnectPage from '@/app/pages/PageTwo';
+import PagetwoComponent from "@/components/page-two/PagetwoComponent";
+import React from "react";
 
-export default function Page() {
-  return <ConnectPage />;
+const PagetwoPage = () =>{
+
+  return (
+    <>
+    <PagetwoComponent />
+    </>
+  )
 }
+export default PagetwoPage
