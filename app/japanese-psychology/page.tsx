@@ -1,5 +1,5 @@
 
-import JapanesepsychologyComponent from '@/components/Japanese-psychology/JapanesepsychologyComponent';
+import JapanesepsychologyComponent from '@/components/japanese-psychology/JapanesepsychologyComponent'
 
 import React from 'react';
 

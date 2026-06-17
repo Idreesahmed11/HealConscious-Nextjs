@@ -1,4 +1,4 @@
-import InfoSectionComponent from '@/components/Infosection/InfoSectionComponent';
+import InfoSectionComponent from '@/components/InfoSection/InfoSectionComponent'
 import React from 'react';
 
 const InfoSectionpage = () => {
