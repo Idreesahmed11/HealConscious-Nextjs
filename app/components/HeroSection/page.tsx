@@ -1,4 +1,4 @@
-import HeroSectionComponent from '@/components/Herosection/HeroSectionComponent';
+import HeroSectionComponent from '@/components/HeroSection/HeroSectionComponent'
 import React from 'react';
 
 const HeroSectionpage = () => {

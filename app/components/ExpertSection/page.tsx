@@ -1,4 +1,4 @@
-import ExpertsectionComponent from '@/components/Expertsection/CareoxExperienceComponent.';
+import ExpertsectionComponent from '@/components/Expertsection/ExpertsectionComponent'
 import React from 'react';
 
 
