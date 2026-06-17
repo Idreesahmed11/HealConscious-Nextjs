@@ -91,13 +91,11 @@ const BioComponent = () => {
               <span className="text-black">Biofeedback & Careox</span>
             </nav>
             <div className="w-10 h-[3px] bg-[#4db8c0] mb-4 rounded-full" />
-            <h3 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-black uppercase text-black tracking-tight leading-[1.1]">
+            <h1 className="text-4xl lg:text-5xl font-black uppercase text-black tracking-tighter">
               Biofeedback<br />
               <span className="text-[#4db8c0]">& Careox</span>
-            </h3>
-            <p className="mt-4 text-gray-600 text-[14px] leading-relaxed max-w-sm">
-              Listen to your body&apos;s signals and learn to control them — no machines required.
-            </p>
+            </h1>
+          
           </div>
           <div className="w-full lg:w-auto flex justify-center lg:justify-end items-center lg:max-w-[50%] z-10">
             <img
