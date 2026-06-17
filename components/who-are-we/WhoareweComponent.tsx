@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { WhereweareComponent } from '@/components/where-we-are-/WhereweareComponent';
+import { WhereweareComponent } from '@/components/where-we-are/WhereweareComponent';
 
 const heroImage = "/assets/Transparent-heal-conscious-image.png";
 
@@ -19,7 +19,7 @@ const fazeelaImg = "/assets/Fazeela Sayed.png";
 const sanaAmjadImg = "/assets/fazeela-syed-psychology-resident-mental-health-coach-at-heal-conscious-4.png";
 const tahreemImg = "/assets/Tahreem Asghar.png";
 
-export default function WhereweareComponent() {
+export default function WhoareweComponent() {
   return (
     <div className="w-full font-sans">
 

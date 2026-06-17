@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import ExpertsectionComponent from '@/components/Expertsection/CareoxExperienceComponent.tsx';
+import ExpertsectionComponent from '@/components/Expertsection/ExpertsectionComponent';
 
 import HeroSection from '@/components/HeroSection/HeroSectionComponent';
 import InfoSection from '@/components/InfoSection/InfoSectionComponent';
