@@ -1,5 +1,5 @@
-import WhoWeAre from '@/app/pages/WhoWeAre';
+import WhoareweComponent from '@/components/who-are-we/WhoareweComponent';
 
 export default function Page() {
-  return <WhoWeAre />;
+  return <WhoareweComponent />;
 }

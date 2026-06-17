@@ -1,5 +1,5 @@
-import WhatIsCareox from '@/app/pages/WhatIsCareox';
+import React from 'react';
 
-export default function Page() {
-  return <WhatIsCareox />;
+export default function WhatIsCareox() {
+  return <div>What Is Careox</div>;
 }
