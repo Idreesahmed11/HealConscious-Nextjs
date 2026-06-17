@@ -1,13 +1,12 @@
 import ServiceSectionComponent from '@/components/ServicesSection/ServicesSectionComponent';
 import React from 'react';
 
-
 const ServiceSectionpage = () => {
   return (
     <>
-    <ServicesSectioncomponent />
+      <ServiceSectionComponent />
     </>
   );
 };
 
-export default ServiceSectionpage
+export default ServiceSectionpage;
